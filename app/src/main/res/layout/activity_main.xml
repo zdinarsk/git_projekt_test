@@ -5,39 +5,92 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="50dp"
+    android:layout_marginHorizontal="50dp"
+    android:layout_marginVertical="50dp"
     tools:context=".MainActivity">
 
-    <com.google.android.material.chip.ChipGroup
+    <ImageView
+        android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="99dp"
-        tools:layout_editor_absoluteY="195dp">
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="59dp"
+        tools:srcCompat="@tools:sample/avatars" />
 
-    </com.google.android.material.chip.ChipGroup>
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="116dp"
+        android:layout_height="99dp"
+        app:srcCompat="@android:drawable/star_on"
+        tools:layout_editor_absoluteX="132dp"
+        tools:layout_editor_absoluteY="59dp" />
 
-    <TextView
+    <ImageView
+        android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        app:srcCompat="@drawable/ic_launcher_foreground"
+        tools:layout_editor_absoluteX="108dp"
+        tools:layout_editor_absoluteY="122dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="83dp"
+        android:layout_height="87dp"
+        app:srcCompat="@android:drawable/sym_action_chat"
+        tools:layout_editor_absoluteX="108dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <LinearLayout
+        android:layout_width="411dp"
+        android:layout_height="141dp"
+        android:layout_marginStart="24dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.488">
 
-    <com.google.android.material.chip.ChipGroup
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="79dp"
-        tools:layout_editor_absoluteY="70dp">
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button" />
 
-    </com.google.android.material.chip.ChipGroup>
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="70dp" />
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button" />
+
+    </LinearLayout>
+
+    <TableRow
+        android:layout_width="310dp"
+        android:layout_height="205dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="425dp">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="50dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="39dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="50dp"
+            tools:srcCompat="@tools:sample/avatars" />
+    </TableRow>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
